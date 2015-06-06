@@ -1,0 +1,10 @@
+﻿  .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-right
+            .container
+                form.navbar-form(method="post", id="loginForm" )
+                    .form-group
+                        label(id="mylabel") Username
+                        input.form-control(id="username", type="text", name="User", placeholder="Enter your username" , style='margin-left: 10px, margin-right: 10px')
+                        label(id="mylabel") Password
+                        input.form-control(id="password", type="password", name="Password", style='margin-left: 10px')
+                        input.btn.btn-primary(type="submit", value="Log In", style='margin-left: 10px')

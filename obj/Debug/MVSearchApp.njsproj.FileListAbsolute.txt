@@ -1,0 +1,2 @@
+E:\Git\ExpressTest\obj\Debug\MVSearchApp.njsprojResolveAssemblyReference.cache
+E:\Git\ExpressTest\bin\Microsoft.NodejsTools.WebRole.dll

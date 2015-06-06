@@ -1,25 +1,26 @@
 extends layout
+
 block content
-  div.top
-    form.form-horizontal(method="post", id="loginForm")
-      label Username
-      input.span3(id="username", type="text", name="User", placeholder="Enter your username")
-      label Password
-      input.span3(id="password", type="password", name="Password")
-      input.btn(type="submit", value="Log In")
-  div.container
-    div.content
-      table.table.table-striped
-        thead
-          tr
-            th Table
-            th Heading
-        tbody
-          tr
-            td Blah
-            td Test
-          tr
-            td Hello
-            td World
- 
-  div.footer
+
+    include menubar.html
+    section.home(class="home")
+
+        .container(id="headerwrap")
+            .row
+                .col-md-8.col-md-offset-4
+                    h1 MarkLogic Search Demo
+                        <section id="home" name="home"></section>
+
+    section.Search(name="Search");"
+    .container
+        .row
+             .col-lg-8
+                  p Test me
+                  p= title
+                  p= session.username
+                  p= session.password
+                  scritpt 
+    footer.container.text-center
+            p &copy; 2015 MarkLogic - (NodeJS - AngularJS)   
+
+        include lateload.html

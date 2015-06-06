@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6dc72711-7ef9-4abd-b20f-d4c1df734edd}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>bin\www.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="testsearch.js" />
+    <Content Include="bin\www.js" />
+    <Content Include="package.json" />
+    <Compile Include="app.js" />
+    <Compile Include="env.js" />
+    <Compile Include="loaddata.js" />
+    <Compile Include="public\assets\js\bootstrap.min.js" />
+    <Compile Include="public\assets\js\classie.js" />
+    <Compile Include="public\assets\js\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Compile Include="public\assets\js\fancybox\helpers\jquery.fancybox-media.js" />
+    <Compile Include="public\assets\js\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Compile Include="public\assets\js\fancybox\jquery.fancybox.js" />
+    <Compile Include="public\assets\js\jquery.stellar.min.js" />
+    <Compile Include="public\assets\js\main.js" />
+    <Compile Include="public\assets\js\smoothscroll.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\users.js" />
+    <Content Include="public\assets\css\bootstrap.css" />
+    <Content Include="public\assets\css\font-awesome.min.css" />
+    <Content Include="public\assets\css\style.css" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="public\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="public\assets\fonts\FontAwesome.otf" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\assets\img\about-sep.jpg" />
+    <Content Include="public\assets\img\architecture-hand.jpg" />
+    <Content Include="public\assets\img\architecture-hand_c.jpg" />
+    <Content Include="public\assets\img\architecture-hand_white.jpg" />
+    <Content Include="public\assets\img\back.jpg" />
+    <Content Include="public\assets\img\contact-sep.jpg" />
+    <Content Include="public\assets\img\Desktop-Sep.jpg" />
+    <Content Include="public\assets\img\martinv3-Port.jpg" />
+    <Content Include="public\assets\img\MUVITBanner.jpg" />
+    <Content Include="public\assets\img\name-label.png" />
+    <Content Include="public\assets\img\name-zig.png" />
+    <Content Include="public\assets\img\pic-t1.jpg" />
+    <Content Include="public\assets\img\pic-t2.jpg" />
+    <Content Include="public\assets\img\pic-t3.jpg" />
+    <Content Include="public\assets\img\pic.png" />
+    <Content Include="public\assets\img\portfolio-sep.jpg" />
+    <Content Include="public\assets\img\portfolio\port01.jpg" />
+    <Content Include="public\assets\img\portfolio\port02.jpg" />
+    <Content Include="public\assets\img\portfolio\port03.jpg" />
+    <Content Include="public\assets\img\portfolio\port04.jpg" />
+    <Content Include="public\assets\img\portfolio\port05.jpg" />
+    <Content Include="public\assets\img\portfolio\port06.jpg" />
+    <Content Include="public\assets\img\zoom.png" />
+    <Content Include="public\assets\js\fancybox\blank.gif" />
+    <Content Include="public\assets\js\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="public\assets\js\fancybox\fancybox_loading.gif" />
+    <Content Include="public\assets\js\fancybox\fancybox_overlay.png" />
+    <Content Include="public\assets\js\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="public\assets\js\fancybox\fancybox_sprite.png" />
+    <Content Include="public\assets\js\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="public\assets\js\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="public\assets\js\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="public\assets\js\fancybox\jquery.fancybox.css" />
+    <Content Include="public\images\mlbanner.jpg" />
+    <Content Include="views\lateload.html" />
+    <Content Include="views\menubar.html" />
+    <Content Include="views\error.jade" />
+    <Content Include="views\helloworld.jade" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="public\bootstrap\package.json" />
+    <Content Include="public\bootstrap\README.md" />
+    <Compile Include="public\bootstrap\Gruntfile.js" />
+    <Content Include="public\images\favicon.ico" />
+    <Content Include="public\stylesheets\old_style.css" />
+    <Content Include="public\stylesheets\style.css" />
+    <Content Include="public\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\bootstrap\grunt\configBridge.json" />
+    <Compile Include="public\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Compile Include="public\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Compile Include="public\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Compile Include="public\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Compile Include="public\bootstrap\js\affix.js" />
+    <Compile Include="public\bootstrap\js\alert.js" />
+    <Compile Include="public\bootstrap\js\button.js" />
+    <Compile Include="public\bootstrap\js\carousel.js" />
+    <Compile Include="public\bootstrap\js\collapse.js" />
+    <Compile Include="public\bootstrap\js\dropdown.js" />
+    <Compile Include="public\bootstrap\js\modal.js" />
+    <Compile Include="public\bootstrap\js\popover.js" />
+    <Compile Include="public\bootstrap\js\scrollspy.js" />
+    <Compile Include="public\bootstrap\js\tab.js" />
+    <Compile Include="public\bootstrap\js\tooltip.js" />
+    <Compile Include="public\bootstrap\js\transition.js" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="public\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="public\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="public\bootstrap\dist\js\bootstrap.js" />
+    <Compile Include="public\bootstrap\dist\js\bootstrap.min.js" />
+    <Compile Include="public\bootstrap\dist\js\npm.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin" />
+    <Folder Include="public" />
+    <Folder Include="public\assets\" />
+    <Folder Include="public\assets\css\" />
+    <Folder Include="public\assets\fonts\" />
+    <Folder Include="public\assets\img\" />
+    <Folder Include="public\assets\img\portfolio\" />
+    <Folder Include="public\assets\js\" />
+    <Folder Include="public\assets\js\fancybox\" />
+    <Folder Include="public\assets\js\fancybox\helpers\" />
+    <Folder Include="public\bootstrap" />
+    <Folder Include="public\bootstrap\dist" />
+    <Folder Include="public\bootstrap\dist\css" />
+    <Folder Include="public\bootstrap\dist\fonts" />
+    <Folder Include="public\bootstrap\dist\js" />
+    <Folder Include="public\bootstrap\fonts" />
+    <Folder Include="public\bootstrap\grunt" />
+    <Folder Include="public\bootstrap\js" />
+    <Folder Include="public\bootstrap\less" />
+    <Folder Include="public\bootstrap\less\mixins" />
+    <Folder Include="public\images" />
+    <Folder Include="public\javascripts" />
+    <Folder Include="public\stylesheets" />
+    <Folder Include="routes" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

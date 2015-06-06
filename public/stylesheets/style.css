@@ -249,21 +249,19 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-    background: url(../img/MUVITBanner.jpg) no-repeat center top;
+    background: url(/images/mlbanner.jpg) no-repeat center top;
     /*background: url(../img/architecture-hand_c.jpg) no-repeat center top;*/
     margin-top: 0px;
-	padding-top:120px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 1080px;
-	width: 100%;
-	
+    padding-top: 120px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 1080px;
+    width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -489,4 +487,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .desc {
 	margin-top: 25px;
+}
+
+#mylabel{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #eee !important;
 }
