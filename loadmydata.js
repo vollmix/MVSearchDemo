@@ -170,24 +170,24 @@ var houses =[
 ];
 
 
-//var marklogic = require("marklogic");
-//var conn = require("./routes/env.js").connection;
+var marklogic = require("marklogic");
+var conn = require("./routes/env.js").connection;
 
-//var db = marklogic.createDatabaseClient(conn);
+var db = marklogic.createDatabaseClient(conn);
 
-//    db.documents.write(
-//        houses.map(function (item) {
-//            return {
-//                uri: "/house" + item.id  + ".json",
-//                contentType: "application/json",
-//                collections: ["housedata"],
-//                content: item
-//            }
-//        })
-//    ).
-//  result(function (response) {
-//        console.dir(JSON.stringify(response))
-//    });
+    db.documents.write(
+        houses.map(function (item) {
+            return {
+                uri: "/house" + item.id  + ".json",
+                contentType: "application/json",
+                collections: ["housedata"],
+                content: item
+            }
+        })
+    ).
+  result(function (response) {
+        console.dir(JSON.stringify(response))
+    });
 
 
 module.exports = {houses: houses}
