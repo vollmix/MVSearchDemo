@@ -13,7 +13,7 @@ var app = express();
 var session = require('express-session')
 var marklogic = require("marklogic");
 //var conn = require("./env.js").connection;
-var myhouses = require('./loadmydata.js').houses;
+//var myhouses = require('./loadmydata.js').houses;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
