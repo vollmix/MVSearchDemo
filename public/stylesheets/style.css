@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 1080px;
+    /* min-height: 1080px; */
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -493,4 +493,37 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 10px;
     margin-right: 10px;
     color: #eee !important;
+}
+
+#map {
+  width:500px;
+  height:500px
+}
+
+.mvrowborder {
+    border-radius:6px;
+    border: 1px solid #ddd;
+    margin: 4px, 0px, 4px, 0px;
+}
+.mvodd{
+    background-color:#f0f8ff;
+
+}
+.mvodd2{
+    background-color:#e5ecf3;
+
+}
+.mveven{
+    background-color:#f3f3f3;
+
+}
+.mveven2{
+    background-color:#d3d3d3;
+
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 250px;
+    overflow-x: hidden;
 }

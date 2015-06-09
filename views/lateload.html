@@ -23,3 +23,16 @@
         jQuery(".fancybox").fancybox();
     });
 </script>
+<script>
+    $(document).ready(function(){
+        $("#features").on("hide.bs.collapse", function(){
+            $(".btn").html('<span class="glyphicon glyphicon-collapse-down"></span> Open');
+        });
+        $("#features").on("show.bs.collapse", function () {
+            $(".btn").html('<span class="glyphicon glyphicon-collapse-up"></span> Close');
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+
+    });
+</script>
+
