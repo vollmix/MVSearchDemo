@@ -96,7 +96,7 @@
     <Content Include="views\menubar.html" />
     <Content Include="views\error.jade" />
     <Content Include="views\helloworld.jade" />
-    <Content Include="views\index.jade" />
+    <Content Include="views\index-lg.jade" />
     <Content Include="views\layout.jade" />
     <Content Include="public\bootstrap\package.json" />
     <Content Include="public\bootstrap\README.md" />

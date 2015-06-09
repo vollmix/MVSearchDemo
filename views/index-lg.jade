@@ -7,7 +7,7 @@ block content
 
         .container(id="headerwrap")
             .row
-                .col-md-8.col-md-offset-2
+                .col-lg-8.col-md-offset-2
                     h1 MarkLogic Search Demo
    
     section.Search(name="Search")
@@ -16,11 +16,11 @@ block content
         //img(src="./images/houses/house1.jpg" alt="house1.jpg")
         form.form-inline(method="post", id="searchForm" action='/fieldsearch' )
             .row
-                .col-md-2
-                .col-md-8
-                    .col-md-4
+                .col-lg-2
+                .col-lg-8
+                    .col-lg-4
                         h3 Available States:
-                    .col-md-8
+                    .col-lg-8
                             .input-group(style='margin-top: 20px') 
                               .span.input-group-btn                        
                                 - if (session.facets)
@@ -28,32 +28,32 @@ block content
                                         button.btn.btn-link(type="submit", name="FacetButton", value= value.name + " : " + value.count )
                                             =value.name  + " "
                                                 .span.badge #{value.count}
-                .col-md-2
+                .col-lg-2
 
     .container 
         form.form-inline(method="post", id="searchForm" action='/search' style='margin-top: 10px')
             .row
-                .col-md-2
-                .col-md-8
+                .col-lg-2
+                .col-lg-8
                         .input-group
                             input.form-control(id="SearchString", type="text", name="SearchString", placeholder="Enter Search String for a Keyword Search")
                             .span.input-group-btn
                                 input.btn.btn-info(type="submit", value="Search")
-                .col-md-2
+                .col-lg-2
     .container
         form.form-inline(method="post", id="searchForm" action='/searchrel' style='margin-top: 5px')
             .row
-                .col-md-2
-                .col-md-8
+                .col-lg-2
+                .col-lg-8
                         .input-group
                             input.form-control(id="RelSearchString", type="text", name="RelSearchString", placeholder="Enter Search String for a Keyword Search with Ordering  by Relevance")
                             .span.input-group-btn
                                 input.btn.btn-info(type="submit", value="Search")
-                .col-md-2
+                .col-lg-2
     .container
         .row
-            .col-md-2
-            .col-md-8
+            .col-lg-2
+            .col-lg-8
                 -if (search == 'NoDocs')
                     h2 No Matching Documents found for: "#{searchString}"
                 -if (search == 'KeyWord')
@@ -62,25 +62,25 @@ block content
                     h2 Search Results for a Keyword Search: "#{searchString}"
                 -if (search == 'FieldSearch')
                     h2 Search Results for a Field Search from Facet: #{searchString}"
-            .col-md-2
+            .col-lg-2
     .container
             - if (search == 'KeyWord' || search == 'FieldSearch')
               each document, i in results
                   .row
-                    .col-md-2
-                    .col-md-8.mvrowborder(class=(i % 2 == 0) ? 'mvodd' : 'mveven')
+                    .col-lg-2
+                    .col-lg-8.mvrowborder(class=(i % 2 == 0) ? 'mvodd' : 'mveven')
                         .row
-                            .col-md-12
+                            .col-lg-12
                                 h2= document.content.title
 
                         .row(class=(i % 2 == 0) ? 'mvodd2' : 'mveven2')
-                            .col-md-4.mvrowborder(style='height: 200px')
+                            .col-lg-4.mvrowborder(style='height: 200px')
                                 h3 Details:
                                 h4 Price: #{document.content.price} $
                                 h4 Lot:  #{document.content.lot}
                                 h4 State:  #{document.content.state}
                                 h4 Bedrooms: #{document.content.bedrooms}  Baths: #{document.content.baths}
-                            .col-md-4.mvrowborder(style='height: 200px')
+                            .col-lg-4.mvrowborder(style='height: 200px')
                                 h3 Address:
                                 h4 City   : #{document.content.zip} #{document.content.town}
                                 h4 Street : #{document.content.street}
@@ -94,7 +94,7 @@ block content
                                         each feature in document.content.features
                                             li  &#9830;   #{feature}
                                             
-                            .col-md-4.mvrowborder.embed-responsive.embed-responsive-4by3.center(style='height: 200px vertical-align: middle')
+                            .col-lg-4.mvrowborder.embed-responsive.embed-responsive-4by3.center(style='height: 200px vertical-align: middle')
                                 img.img-responsive.img-rounded(alt= document.content.img src="./images/houses/" + document.content.img height="100%" width="100%")
            
                     .col.lg-2    
@@ -102,20 +102,20 @@ block content
             - if (search == 'KeyWordRel')
               each document, i in results
                   .row
-                    .col-md-2
-                    .col-md-8.mvrowborder(class=(i % 2 == 0) ? 'mvodd' : 'mveven')
+                    .col-lg-2
+                    .col-lg-8.mvrowborder(class=(i % 2 == 0) ? 'mvodd' : 'mveven')
                         .row
-                            .col-md-12
+                            .col-lg-12
                                 h2= document.content.title
 
                         .row(class=(i % 2 == 0) ? 'mvodd2' : 'mveven2')
-                            .col-md-4.mvrowborder(style='height: 200px')
+                            .col-lg-4.mvrowborder(style='height: 200px')
                                 h3 Details:
                                 h4 Price: #{document.content.price} $
                                 h4 Lot:  #{document.content.lot}
                                 h4 State:  #{document.content.state}
                                 h4 Bedrooms: #{document.content.bedrooms}  Baths: #{document.content.baths}
-                            .col-md-4.mvrowborder(style='height: 200px')
+                            .col-lg-4.mvrowborder(style='height: 200px')
                                 h3 Address:
                                 h4 City   : #{document.content.zip} #{document.content.town}
                                 h4 Street : #{document.content.street}
@@ -129,16 +129,16 @@ block content
                                         each feature in document.content.features
                                             li  &#9830;   #{feature}
                                             
-                            .col-md-4.mvrowborder.embed-responsive.embed-responsive-4by3.center(style='height: 200px vertical-align: middle')
+                            .col-lg-4.mvrowborder.embed-responsive.embed-responsive-4by3.center(style='height: 200px vertical-align: middle')
                                 img.img-responsive.img-rounded(alt= document.content.img src="./images/houses/" + document.content.img height="100%" width="100%")
                         .row.mvrowborder
                         if(resdata)
                             h4 Relevance Statistics: 
-                            .col-md-4
+                            .col-lg-4
                                 h5 Confidence: #{resdata.results[i].confidence} 
-                            .col-md-4
+                            .col-lg-4
                                 h5 Score: #{resdata.results[i].score} 
-                            .col-md-4
+                            .col-lg-4
                                 h5 Fitness: #{resdata.results[i].fitness}
            
                     .col.lg-2
@@ -151,7 +151,7 @@ block content
         .sep
 
         //.row
-             .col-md-8
+             .col-lg-8
                   #map
         footer.container.text-center
             p &copy; Martin Vollmer for MarkLogic 2015 - (NodeJS - Express - Jade)   
